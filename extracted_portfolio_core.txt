@@ -1,0 +1,1502 @@
+ "data-testid": "mobile-menu-toggle",
+        onClick: () => setOpen(v => !v),
+        className: "md:hidden text-slate-300 hover:text-white p-2",
+        "aria-label": "Toggle menu",
+        "x-file-name": "Navbar",
+        "x-line-number": "51",
+        "x-column": "8",
+        "x-component": "button",
+        "x-id": "Navbar_51_8",
+        "x-dynamic": "true",
+        "x-source-type": "computed",
+        "x-source-editable": "false",
+        children: open ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          size: 20,
+          strokeWidth: 1.2
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 19
+        }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          size: 20,
+          strokeWidth: 1.2
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 55
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }, this), open && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+      "data-testid": "mobile-menu",
+      className: "md:hidden border-t border-white/5 bg-[#050508]/95",
+      "x-file-name": "Navbar",
+      "x-line-number": "62",
+      "x-column": "8",
+      "x-component": "div",
+      "x-id": "Navbar_62_8",
+      "x-dynamic": "false",
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        className: "px-6 py-6 flex flex-col gap-5",
+        "x-file-name": "Navbar",
+        "x-line-number": "66",
+        "x-column": "10",
+        "x-component": "div",
+        "x-id": "Navbar_66_10",
+        "x-dynamic": "true",
+        "x-source-type": "computed",
+        "x-source-editable": "false",
+        children: links.map(l => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+          to: l.to,
+          "data-testid": `${l.testId}-mobile`,
+          onClick: () => setOpen(false),
+          className: ({
+            isActive
+          }) => `font-mono-tag text-xs tracking-[0.25em] uppercase ${isActive ? "text-cyan-400" : "text-slate-400"}`,
+          children: l.label
+        }, l.to, false, {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 15
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 11
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 17,
+    columnNumber: 5
+  }, this);
+}
+_s(Navbar, "9Vqv44uGqENFcAnwrsllx0OdGxE=", false, function () {
+  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useLocation];
+});
+_c = Navbar;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "Navbar");
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		let errorOverlay;
+		if (true) {
+			errorOverlay = false;
+		}
+		let testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ },
+
+/***/ "./src/components/StarField.jsx"
+/*!**************************************!*\
+  !*** ./src/components/StarField.jsx ***!
+  \**************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StarField)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+var _jsxFileName = "/app/frontend/src/components/StarField.jsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+/**
+ * Lightweight canvas star field with subtle parallax drift.
+ * Stars twinkle and slowly drift. Occasional shooting star.
+ */
+
+function StarField() {
+  _s();
+  const canvasRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let raf;
+    let stars = [];
+    let shootingStars = [];
+    let w, h;
+    const resize = () => {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.width = window.innerWidth * dpr;
+      h = canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+      const count = Math.floor(window.innerWidth * window.innerHeight / 6000);
+      stars = Array.from({
+        length: count
+      }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 1.2 * dpr + 0.3,
+        a: Math.random() * 0.8 + 0.2,
+        s: Math.random() * 0.5 + 0.1,
+        // twinkle speed
+        p: Math.random() * Math.PI * 2,
+        vy: (Math.random() * 0.02 + 0.005) * dpr,
+        color: Math.random() > 0.92 ? "#FCD34D" : Math.random() > 0.85 ? "#38BDF8" : "#FFFFFF"
+      }));
+    };
+    const spawnShooting = () => {
+      if (Math.random() < 0.003 && shootingStars.length < 2) {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        shootingStars.push({
+          x: Math.random() * w * 0.6,
+          y: Math.random() * h * 0.3,
+          vx: (4 + Math.random() * 3) * dpr,
+          vy: (1.5 + Math.random() * 1) * dpr,
+          life: 60,
+          maxLife: 60
+        });
+      }
+    };
+    let t = 0;
+    const tick = () => {
+      t += 0.016;
+      ctx.fillStyle = "rgba(5, 5, 8, 1)";
+      ctx.fillRect(0, 0, w, h);
+
+      // stars
+      for (const s of stars) {
+        const alpha = s.a * (0.6 + 0.4 * Math.sin(t * s.s * 2 + s.p));
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = s.color;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fill();
+        s.y -= s.vy;
+        if (s.y < -5) s.y = h + 5;
+      }
+      ctx.globalAlpha = 1;
+
+      // shooting stars
+      spawnShooting();
+      shootingStars = shootingStars.filter(ss => {
+        ss.x += ss.vx;
+        ss.y += ss.vy;
+        ss.life -= 1;
+        const grad = ctx.createLinearGradient(ss.x, ss.y, ss.x - ss.vx * 8, ss.y - ss.vy * 8);
+        grad.addColorStop(0, `rgba(255,255,255,${ss.life / ss.maxLife})`);
+        grad.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(ss.x, ss.y);
+        ctx.lineTo(ss.x - ss.vx * 8, ss.y - ss.vy * 8);
+        ctx.stroke();
+        return ss.life > 0 && ss.x < w + 50;
+      });
+      raf = requestAnimationFrame(tick);
+    };
+    resize();
+    window.addEventListener("resize", resize);
+    tick();
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("canvas", {
+    ref: canvasRef,
+    "data-testid": "star-field-canvas",
+    className: "fixed inset-0 w-full h-full pointer-events-none",
+    style: {
+      zIndex: 0
+    },
+    "x-file-name": "StarField",
+    "x-line-number": "102",
+    "x-column": "4",
+    "x-component": "canvas",
+    "x-id": "StarField_102_4",
+    "x-dynamic": "false"
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 102,
+    columnNumber: 5
+  }, this);
+}
+_s(StarField, "UJgi7ynoup7eqypjnwyX/s32POg=");
+_c = StarField;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "StarField");
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		let errorOverlay;
+		if (true) {
+			errorOverlay = false;
+		}
+		let testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ },
+
+/***/ "./src/index.css"
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!../node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!../node_modules/source-map-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+if (true) {
+  if (!_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+  var p;
+  for (p in a) {
+    if (isNamedExport && p === "default") {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+  for (p in b) {
+    if (isNamedExport && p === "default") {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+    if (!a[p]) {
+      return false;
+    }
+  }
+  return true;
+};
+    var isNamedExport = !_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+    var oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+
+    module.hot.accept(
+      /*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!../node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!../node_modules/source-map-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css",
+      __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!../node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!../node_modules/source-map-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/react-scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css");
+ return (function () {
+        if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals, isNamedExport)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+
+              update(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
+      })(__WEBPACK_OUTDATED_DEPENDENCIES__); }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_react_scripts_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
+/***/ "./src/index.js"
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tanstack/react-query */ "./node_modules/@tanstack/query-core/build/modern/queryClient.js");
+/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @tanstack/react-query */ "./node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/index.css */ "./src/index.css");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/App */ "./src/App.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+var _jsxFileName = "/app/frontend/src/index.js";
+
+
+
+
+
+
+const queryClient = new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_2__.QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 60000,
+      refetchOnWindowFocus: false
+    }
+  }
+});
+const root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("root"));
+root.render(/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), {
+  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__.QueryClientProvider, {
+    client: queryClient,
+    "x-file-name": "index",
+    "x-line-number": "19",
+    "x-column": "4",
+    "x-component": "QueryClientProvider",
+    "x-id": "index_19_4",
+    "x-dynamic": "false",
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_App__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      "x-file-name": "index",
+      "x-line-number": "20",
+      "x-column": "6",
+      "x-component": "App",
+      "x-id": "index_20_6",
+      "x-dynamic": "true"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 7
+    }, undefined)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 19,
+    columnNumber: 5
+  }, undefined)
+}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 18,
+  columnNumber: 3
+}, undefined));
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		let errorOverlay;
+		if (true) {
+			errorOverlay = false;
+		}
+		let testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ },
+
+/***/ "./src/pages/Home.jsx"
+/*!****************************!*\
+  !*** ./src/pages/Home.jsx ***!
+  \****************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Home)
+/* harmony export */ });
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-LSOULM7L.mjs");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sparkles.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/arrow-up-right.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/atom.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/download.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/orbit.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/telescope.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+var _jsxFileName = "/app/frontend/src/pages/Home.jsx";
+
+
+
+
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 24
+  },
+  show: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay: i * 0.08,
+      ease: [0.22, 1, 0.36, 1]
+    }
+  })
+};
+const aboutParas = ["I'm currently pursuing a BS-MS at IISER Pune, trying to make sense of things that are often far bigger than me, say, quantum mechanics, gravitation, astronomy, and astrophysics, being a few of them. Most days, that means reading, asking too many questions, getting stuck, and slowly learning how to think more clearly.", "Most of my time goes into coursework, labs, reading things slightly above my comfort level, and figuring things out with other curious people. Outside the classroom, I spend a lot of time around campus activities and student spaces. I'm involved with clubs like the Science Club and Mimamsa. I also spend time playing Kho-Kho, because apparently running in circles is a lifestyle now.", "I like people and conversations that are curious, thoughtful, and open-ended. A lot of what interests me lies less in having answers and more in understanding how people think through difficult questions, in physics or otherwise.", "Still learning, still exploring."];
+const interests = [{
+  icon: lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"],
+  label: "Quantum Mechanics"
+}, {
+  icon: lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"],
+  label: "Gravitation"
+}, {
+  icon: lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"],
+  label: "Astrophysics"
+}, {
+  icon: lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"],
+  label: "Astronomy"
+}];
+function Home() {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+    "data-testid": "home-page",
+    "x-file-name": "Home",
+    "x-line-number": "30",
+    "x-column": "4",
+    "x-component": "div",
+    "x-id": "Home_30_4",
+    "x-dynamic": "false",
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("section", {
+      className: "relative min-h-[92vh] flex items-center",
+      "x-file-name": "Home",
+      "x-line-number": "32",
+      "x-column": "6",
+      "x-component": "section",
+      "x-id": "Home_32_6",
+      "x-dynamic": "false",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+        className: "max-w-7xl mx-auto px-6 sm:px-8 md:px-12 w-full grid grid-cols-1 md:grid-cols-12 gap-10 items-center py-20",
+        "x-file-name": "Home",
+        "x-line-number": "33",
+        "x-column": "8",
+        "x-component": "div",
+        "x-id": "Home_33_8",
+        "x-dynamic": "false",
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "md:col-span-7 relative z-10",
+          "x-file-name": "Home",
+          "x-line-number": "34",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_34_10",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.p, {
+            variants: fadeUp,
+            initial: "hidden",
+            animate: "show",
+            custom: 0,
+            className: "font-mono-tag text-[11px] tracking-[0.3em] uppercase text-cyan-400/80",
+            "x-file-name": "Home",
+            "x-line-number": "35",
+            "x-column": "12",
+            "x-component": "p",
+            "x-id": "Home_35_12",
+            "x-dynamic": "true",
+            "x-source-type": "computed",
+            "x-source-editable": "false",
+            children: ["\u2726 Notes from the Noise \xB7 est. ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              "data-ve-dynamic": "true",
+              "x-excluded": "true",
+              style: {
+                display: "contents"
+              },
+              "x-file-name": "Home",
+              "x-line-number": "35",
+              "x-column": "12",
+              "x-component": "p",
+              "x-id": "Home_35_12_expr1",
+              "x-dynamic": "true",
+              "x-source-type": "computed",
+              "x-source-editable": "false",
+              children: new Date().getFullYear()
+            }, void 0, false)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.h1, {
+            variants: fadeUp,
+            initial: "hidden",
+            animate: "show",
+            custom: 1,
+            className: "font-serif-display text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[0.95] tracking-tight font-light text-slate-100 mt-6 text-balance",
+            "x-file-name": "Home",
+            "x-line-number": "45",
+            "x-column": "12",
+            "x-component": "h1",
+            "x-id": "Home_45_12",
+            "x-dynamic": "false",
+            children: ["Rudra", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("br", {
+              "x-file-name": "Home",
+              "x-line-number": "53",
+              "x-column": "14",
+              "x-component": "br",
+              "x-id": "Home_53_14",
+              "x-dynamic": "false"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 53,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              className: "italic text-slate-300",
+              "x-file-name": "Home",
+              "x-line-number": "54",
+              "x-column": "14",
+              "x-component": "span",
+              "x-id": "Home_54_14",
+              "x-dynamic": "false",
+              children: "Sahu"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 54,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              className: "text-cyan-400",
+              "x-file-name": "Home",
+              "x-line-number": "55",
+              "x-column": "14",
+              "x-component": "span",
+              "x-id": "Home_55_14",
+              "x-dynamic": "false",
+              children: "."
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 55,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.p, {
+            variants: fadeUp,
+            initial: "hidden",
+            animate: "show",
+            custom: 2,
+            className: "font-serif-display italic text-xl sm:text-2xl text-slate-400 mt-8 max-w-xl",
+            "x-file-name": "Home",
+            "x-line-number": "58",
+            "x-column": "12",
+            "x-component": "p",
+            "x-id": "Home_58_12",
+            "x-dynamic": "false",
+            children: "\u201CScience, stories, and the self, in superposition.\u201D"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 58,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.p, {
+            variants: fadeUp,
+            initial: "hidden",
+            animate: "show",
+            custom: 3,
+            className: "text-slate-400 mt-6 max-w-xl leading-relaxed text-base sm:text-lg",
+            "x-file-name": "Home",
+            "x-line-number": "68",
+            "x-column": "12",
+            "x-component": "p",
+            "x-id": "Home_68_12",
+            "x-dynamic": "false",
+            children: ["Hey there! I'm a BS-MS Junior at ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              className: "text-slate-200",
+              "x-file-name": "Home",
+              "x-line-number": "75",
+              "x-column": "47",
+              "x-component": "span",
+              "x-id": "Home_75_47",
+              "x-dynamic": "false",
+              children: "IISER Pune"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 75,
+              columnNumber: 48
+            }, this), ". This space is where I reflect, showcase, and share what I\u2019ve been learning and doing \u2014 projects, ideas, collaborations, and questions that continue to excite me."]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 68,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.div, {
+            variants: fadeUp,
+            initial: "hidden",
+            animate: "show",
+            custom: 4,
+            className: "mt-10 flex flex-wrap items-center gap-4",
+            "x-file-name": "Home",
+            "x-line-number": "80",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_80_12",
+            "x-dynamic": "false",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("a", {
+              href: "#",
+              "data-testid": "hero-cv-button",
+              className: "group inline-flex items-center gap-3 border border-white/20 hover:border-cyan-400/60 px-6 py-3.5 text-sm font-mono-tag tracking-[0.2em] uppercase text-slate-200 hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]",
+              "x-file-name": "Home",
+              "x-line-number": "87",
+              "x-column": "14",
+              "x-component": "a",
+              "x-id": "Home_87_14",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                size: 14,
+                strokeWidth: 1.3,
+                "x-file-name": "Home",
+                "x-line-number": "92",
+                "x-column": "16",
+                "x-component": "Download",
+                "x-id": "Home_92_16",
+                "x-dynamic": "false"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 92,
+                columnNumber: 17
+              }, this), "Curriculum Vitae"]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 87,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+              to: "/projects",
+              "data-testid": "hero-projects-link",
+              className: "group inline-flex items-center gap-2 text-sm font-mono-tag tracking-[0.2em] uppercase text-slate-400 hover:text-cyan-400 transition-colors duration-300",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+                className: "link-reveal",
+                "x-file-name": "Home",
+                "x-line-number": "100",
+                "x-column": "16",
+                "x-component": "span",
+                "x-id": "Home_100_16",
+                "x-dynamic": "false",
+                children: "Explore projects"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 100,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                size: 14,
+                strokeWidth: 1.3,
+                className: "group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform",
+                "x-file-name": "Home",
+                "x-line-number": "101",
+                "x-column": "16",
+                "x-component": "ArrowUpRight",
+                "x-id": "Home_101_16",
+                "x-dynamic": "false"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 101,
+                columnNumber: 17
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 95,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.div, {
+          initial: {
+            opacity: 0,
+            scale: 1.05
+          },
+          animate: {
+            opacity: 1,
+            scale: 1
+          },
+          transition: {
+            duration: 1.4,
+            ease: [0.22, 1, 0.36, 1]
+          },
+          className: "md:col-span-5 relative",
+          "x-file-name": "Home",
+          "x-line-number": "106",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_106_10",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "relative aspect-[4/5] overflow-hidden border border-white/10",
+            "x-file-name": "Home",
+            "x-line-number": "112",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_112_12",
+            "x-dynamic": "false",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("img", {
+              src: "https://images.pexels.com/photos/14464685/pexels-photo-14464685.jpeg",
+              alt: "A lone figure beneath the Milky Way",
+              "data-testid": "hero-image",
+              className: "absolute inset-0 w-full h-full object-cover",
+              style: {
+                filter: "saturate(0.85) brightness(0.85)"
+              },
+              "x-file-name": "Home",
+              "x-line-number": "113",
+              "x-column": "14",
+              "x-component": "img",
+              "x-id": "Home_113_14",
+              "x-dynamic": "false"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 113,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+              className: "absolute inset-0 bg-gradient-to-t from-[#050508] via-[#050508]/30 to-transparent",
+              "x-file-name": "Home",
+              "x-line-number": "120",
+              "x-column": "14",
+              "x-component": "div",
+              "x-id": "Home_120_14",
+              "x-dynamic": "false"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 120,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+              className: "absolute bottom-5 left-5 right-5 flex items-end justify-between",
+              "x-file-name": "Home",
+              "x-line-number": "121",
+              "x-column": "14",
+              "x-component": "div",
+              "x-id": "Home_121_14",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+                "x-file-name": "Home",
+                "x-line-number": "122",
+                "x-column": "16",
+                "x-component": "div",
+                "x-id": "Home_122_16",
+                "x-dynamic": "false",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+                  className: "font-mono-tag text-[9px] tracking-[0.3em] uppercase text-cyan-400/80",
+                  "x-file-name": "Home",
+                  "x-line-number": "123",
+                  "x-column": "18",
+                  "x-component": "p",
+                  "x-id": "Home_123_18",
+                  "x-dynamic": "false",
+                  children: "Frame \xB7 001"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 123,
+                  columnNumber: 19
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+                  className: "font-serif-display italic text-slate-200 text-sm mt-1",
+                  "x-file-name": "Home",
+                  "x-line-number": "126",
+                  "x-column": "18",
+                  "x-component": "p",
+                  "x-id": "Home_126_18",
+                  "x-dynamic": "false",
+                  children: "Looking up, looking in."
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 126,
+                  columnNumber: 19
+                }, this)]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 122,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+                className: "font-mono-tag text-[9px] tracking-[0.2em] text-slate-500",
+                "x-file-name": "Home",
+                "x-line-number": "130",
+                "x-column": "16",
+                "x-component": "p",
+                "x-id": "Home_130_16",
+                "x-dynamic": "false",
+                children: "18\xB0N \xB7 73\xB0E"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 130,
+                columnNumber: 17
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 121,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 112,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "hidden md:flex absolute -left-8 top-1/2 -translate-y-1/2 -rotate-90 origin-left",
+            "x-file-name": "Home",
+            "x-line-number": "137",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_137_12",
+            "x-dynamic": "false",
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+              className: "font-mono-tag text-[10px] tracking-[0.4em] uppercase text-slate-600 whitespace-nowrap",
+              "x-file-name": "Home",
+              "x-line-number": "138",
+              "x-column": "14",
+              "x-component": "p",
+              "x-id": "Home_138_14",
+              "x-dynamic": "false",
+              children: "RA 05h 35m \xB7 DEC \u221205\xB0 27\u2032 \xB7 M42 Orion Nebula"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 138,
+              columnNumber: 15
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 106,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+        className: "absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2",
+        "x-file-name": "Home",
+        "x-line-number": "146",
+        "x-column": "8",
+        "x-component": "div",
+        "x-id": "Home_146_8",
+        "x-dynamic": "false",
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+          className: "font-mono-tag text-[9px] tracking-[0.3em] uppercase text-slate-600",
+          "x-file-name": "Home",
+          "x-line-number": "147",
+          "x-column": "10",
+          "x-component": "span",
+          "x-id": "Home_147_10",
+          "x-dynamic": "false",
+          children: "Scroll"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 147,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "w-px h-12 bg-gradient-to-b from-cyan-400/60 to-transparent",
+          "x-file-name": "Home",
+          "x-line-number": "148",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_148_10",
+          "x-dynamic": "false"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 148,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 146,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("section", {
+      className: "relative py-24 sm:py-32",
+      id: "about",
+      "x-file-name": "Home",
+      "x-line-number": "153",
+      "x-column": "6",
+      "x-component": "section",
+      "x-id": "Home_153_6",
+      "x-dynamic": "false",
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+        className: "max-w-7xl mx-auto px-6 sm:px-8 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16",
+        "x-file-name": "Home",
+        "x-line-number": "154",
+        "x-column": "8",
+        "x-component": "div",
+        "x-id": "Home_154_8",
+        "x-dynamic": "false",
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "md:col-span-4",
+          "x-file-name": "Home",
+          "x-line-number": "155",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_155_10",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+            className: "font-mono-tag text-[10px] tracking-[0.3em] uppercase text-cyan-400/80",
+            "x-file-name": "Home",
+            "x-line-number": "156",
+            "x-column": "12",
+            "x-component": "p",
+            "x-id": "Home_156_12",
+            "x-dynamic": "false",
+            children: "\u2726 001 / About"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 156,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h2", {
+            className: "font-serif-display text-5xl sm:text-6xl text-slate-100 mt-6 font-light tracking-tight",
+            "x-file-name": "Home",
+            "x-line-number": "159",
+            "x-column": "12",
+            "x-component": "h2",
+            "x-id": "Home_159_12",
+            "x-dynamic": "false",
+            children: ["About", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("br", {
+              "x-file-name": "Home",
+              "x-line-number": "160",
+              "x-column": "19",
+              "x-component": "br",
+              "x-id": "Home_160_19",
+              "x-dynamic": "false"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 160,
+              columnNumber: 20
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              className: "italic text-slate-400",
+              "x-file-name": "Home",
+              "x-line-number": "161",
+              "x-column": "14",
+              "x-component": "span",
+              "x-id": "Home_161_14",
+              "x-dynamic": "false",
+              children: "me"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 161,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 159,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "mt-10 space-y-4",
+            "x-file-name": "Home",
+            "x-line-number": "164",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_164_12",
+            "x-dynamic": "true",
+            "x-source-type": "computed",
+            "x-source-editable": "false",
+            children: interests.map(({
+              icon: Icon,
+              label
+            }) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+              "data-testid": `interest-${label.toLowerCase().replace(/\s+/g, "-")}`,
+              className: "flex items-center gap-3 group",
+              "x-file-name": "Home",
+              "x-line-number": "166",
+              "x-column": "16",
+              "x-component": "div",
+              "x-id": "Home_166_16",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(Icon, {
+                size: 14,
+                strokeWidth: 1.2,
+                className: "text-cyan-400/70 group-hover:text-cyan-300 transition-colors",
+                "x-file-name": "Home",
+                "x-line-number": "171",
+                "x-column": "18",
+                "x-component": "Icon",
+                "x-id": "Home_171_18",
+                "x-dynamic": "true"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 171,
+                columnNumber: 19
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+                className: "font-mono-tag text-xs tracking-[0.2em] uppercase text-slate-400 group-hover:text-slate-200 transition-colors",
+                "x-file-name": "Home",
+                "x-line-number": "172",
+                "x-column": "18",
+                "x-component": "span",
+                "x-id": "Home_172_18",
+                "x-dynamic": "true",
+                "x-source-type": "prop",
+                "x-source-var": "label",
+                "x-source-editable": "false",
+                children: label
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 172,
+                columnNumber: 19
+              }, this)]
+            }, label, true, {
+              fileName: _jsxFileName,
+              lineNumber: 166,
+              columnNumber: 17
+            }, this))
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 164,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 155,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "md:col-span-8 md:pl-10 border-l border-white/5",
+          "x-file-name": "Home",
+          "x-line-number": "180",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_180_10",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "space-y-6",
+            "x-file-name": "Home",
+            "x-line-number": "181",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_181_12",
+            "x-dynamic": "true",
+            "x-source-type": "computed",
+            "x-source-editable": "false",
+            children: aboutParas.map((p, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.p, {
+              initial: {
+                opacity: 0,
+                y: 16
+              },
+              whileInView: {
+                opacity: 1,
+                y: 0
+              },
+              viewport: {
+                once: true,
+                margin: "-100px"
+              },
+              transition: {
+                duration: 0.7,
+                delay: i * 0.08,
+                ease: [0.22, 1, 0.36, 1]
+              },
+              className: `text-slate-300 leading-[1.85] ${i === 0 ? "text-lg sm:text-xl font-serif-display italic text-slate-200" : "text-base sm:text-lg"}`,
+              "x-file-name": "Home",
+              "x-line-number": "183",
+              "x-column": "16",
+              "x-component": "p",
+              "x-id": "Home_183_16",
+              "x-dynamic": "true",
+              "x-source-type": "static-imported",
+              "x-source-var": "aboutParas",
+              "x-source-file-abs": "/app/frontend/src/pages/Home.jsx",
+              "x-source-line": "14",
+              "x-source-editable": "true",
+              "x-array-var": "aboutParas",
+              "x-array-line": "14",
+              "x-array-item-param": "p",
+              children: p
+            }, i, false, {
+              fileName: _jsxFileName,
+              lineNumber: 183,
+              columnNumber: 17
+            }, this))
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 181,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "mt-12 flex flex-wrap gap-3",
+            "x-file-name": "Home",
+            "x-line-number": "198",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_198_12",
+            "x-dynamic": "true",
+            "x-source-type": "computed",
+            "x-source-editable": "false",
+            children: ["Science Club", "Mimamsa", "Kho-Kho", "IISER Pune"].map(t => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              "data-testid": `tag-${t.toLowerCase().replace(/\s+/g, "-")}`,
+              className: "font-mono-tag text-[10px] tracking-[0.25em] uppercase text-slate-400 border border-white/10 px-3 py-1.5 hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300",
+              "x-file-name": "Home",
+              "x-line-number": "200",
+              "x-column": "16",
+              "x-component": "span",
+              "x-id": "Home_200_16",
+              "x-dynamic": "true",
+              "x-source-type": "static-local",
+              "x-source-file": "/app/frontend/src/pages/Home.jsx",
+              "x-source-file-abs": "/app/frontend/src/pages/Home.jsx",
+              "x-source-line": "199",
+              "x-source-editable": "true",
+              "x-array-file": "/app/frontend/src/pages/Home.jsx",
+              "x-array-line": "199",
+              "x-array-item-param": "t",
+              "x-array-inline": "true",
+              children: t
+            }, t, false, {
+              fileName: _jsxFileName,
+              lineNumber: 200,
+              columnNumber: 17
+            }, this))
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 198,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 180,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 154,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 153,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("section", {
+      className: "relative py-24 sm:py-32",
+      "x-file-name": "Home",
+      "x-line-number": "214",
+      "x-column": "6",
+      "x-component": "section",
+      "x-id": "Home_214_6",
+      "x-dynamic": "false",
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+        className: "max-w-7xl mx-auto px-6 sm:px-8 md:px-12",
+        "x-file-name": "Home",
+        "x-line-number": "215",
+        "x-column": "8",
+        "x-component": "div",
+        "x-id": "Home_215_8",
+        "x-dynamic": "false",
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "grid grid-cols-1 md:grid-cols-12 gap-10 mb-16",
+          "x-file-name": "Home",
+          "x-line-number": "216",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_216_10",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "md:col-span-5",
+            "x-file-name": "Home",
+            "x-line-number": "217",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_217_12",
+            "x-dynamic": "false",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+              className: "font-mono-tag text-[10px] tracking-[0.3em] uppercase text-cyan-400/80",
+              "x-file-name": "Home",
+              "x-line-number": "218",
+              "x-column": "14",
+              "x-component": "p",
+              "x-id": "Home_218_14",
+              "x-dynamic": "false",
+              children: "\u2726 002 / Explore"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 218,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h2", {
+              className: "font-serif-display text-5xl sm:text-6xl text-slate-100 mt-6 font-light tracking-tight",
+              "x-file-name": "Home",
+              "x-line-number": "221",
+              "x-column": "14",
+              "x-component": "h2",
+              "x-id": "Home_221_14",
+              "x-dynamic": "false",
+              children: ["Three", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("br", {
+                "x-file-name": "Home",
+                "x-line-number": "222",
+                "x-column": "21",
+                "x-component": "br",
+                "x-id": "Home_222_21",
+                "x-dynamic": "false"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 222,
+                columnNumber: 22
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+                className: "italic text-slate-400",
+                "x-file-name": "Home",
+                "x-line-number": "222",
+                "x-column": "27",
+                "x-component": "span",
+                "x-id": "Home_222_27",
+                "x-dynamic": "false",
+                children: "trajectories."
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 222,
+                columnNumber: 28
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 221,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 217,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+            className: "md:col-span-7 flex items-end",
+            "x-file-name": "Home",
+            "x-line-number": "225",
+            "x-column": "12",
+            "x-component": "div",
+            "x-id": "Home_225_12",
+            "x-dynamic": "false",
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+              className: "text-slate-400 text-base sm:text-lg leading-relaxed max-w-lg",
+              "x-file-name": "Home",
+              "x-line-number": "226",
+              "x-column": "14",
+              "x-component": "p",
+              "x-id": "Home_226_14",
+              "x-dynamic": "false",
+              children: "Projects I\u2019ve been tinkering with, what life at IISER Pune has looked like, and the school days that quietly set the rest in motion."
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 226,
+              columnNumber: 15
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 225,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 216,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+          className: "grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5",
+          "x-file-name": "Home",
+          "x-line-number": "232",
+          "x-column": "10",
+          "x-component": "div",
+          "x-id": "Home_232_10",
+          "x-dynamic": "true",
+          "x-source-type": "computed",
+          "x-source-editable": "false",
+          children: [{
+            to: "/projects",
+            label: "Projects I’ve Enjoyed",
+            tag: "01 · Work",
+            desc: "Selected explorations across astrophysics and quantum mechanics.",
+            img: "https://images.unsplash.com/photo-1771419544432-a9a0bae77588?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxyYWRpbyUyMHRlbGVzY29wZSUyMG9ic2VydmF0b3J5JTIwbmlnaHR8ZW58MHx8fHwxNzgxODg2Nzg5fDA&ixlib=rb-4.1.0&q=85",
+            testId: "card-projects"
+          }, {
+            to: "/iiser",
+            label: "Life at IISER Pune",
+            tag: "02 · Place",
+            desc: "Clubs, courses, conversations and quiet corners.",
+            img: "https://images.pexels.com/photos/13440917/pexels-photo-13440917.jpeg",
+            testId: "card-iiser"
+          }, {
+            to: "/school",
+            label: "A bit about school days",
+            tag: "03 · Origin",
+            desc: "Where the curiosity started, slowly and stubbornly.",
+            img: "https://images.pexels.com/photos/23522893/pexels-photo-23522893.png",
+            testId: "card-school"
+          }].map((c, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_0__.motion.div, {
+            initial: {
+              opacity: 0,
+              y: 30
+            },
+            whileInView: {
+              opacity: 1,
+              y: 0
+            },
+            viewport: {
+              once: true,
+              margin: "-100px"
+            },
+            transition: {
+              duration: 0.7,
+              delay: i * 0.1
+            },
+            "x-file-name": "Home",
+            "x-line-number": "259",
+            "x-column": "14",
+            "x-component": "div",
+            "x-id": "Home_259_14",
+            "x-dynamic": "false",
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+              to: c.to,
+              "data-testid": c.testId,
+              className: "group block bg-[#050508] hover:bg-[#0A0A12] transition-all duration-500 h-full",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+                className: "aspect-[5/4] overflow-hidden relative",
+                "x-file-name": "Home",
+                "x-line-number": "271",
+                "x-column": "18",
+                "x-component": "div",
+                "x-id": "Home_271_18",
+                "x-dynamic": "false",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("img", {
+                  src: c.img,
+                  alt: c.label,
+                  className: "absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105",
+                  style: {
+                    filter: "grayscale(0.4) brightness(0.7)"
+                  },
+                  "x-file-name": "Home",
+                  "x-line-number": "272",
+                  "x-column": "20",
+                  "x-component": "img",
+                  "x-id": "Home_272_20",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 272,
+                  columnNumber: 21
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+                  className: "absolute inset-0 bg-gradient-to-t from-[#050508] via-[#050508]/40 to-transparent",
+                  "x-file-name": "Home",
+                  "x-line-number": "278",
+                  "x-column": "20",
+                  "x-component": "div",
+                  "x-id": "Home_278_20",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 278,
+                  columnNumber: 21
+                }, this)]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 271,
+                columnNumber: 19
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+                className: "p-8",
+                "x-file-name": "Home",
+                "x-line-number": "280",
+                "x-column": "18",
+                "x-component": "div"

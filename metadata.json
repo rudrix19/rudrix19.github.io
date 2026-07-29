@@ -1,0 +1,6 @@
+{
+  "name": "Research Profile Portfolio",
+  "description": "A polished academic and astrophysics research profile portfolio for Rudra Sahu, detailing coursework logs, publications, and science club activities at IISER Pune.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
